@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.centro{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 20% 100% 20%;
+}
+header{
+    background-color: white;
+    border-style: solid;
+    grid-column: 1 / span 2;
+    border-color: rgb(31, 31, 146);
+}
+nav{
+    background-color: white;
+    border-style: solid;
+    grid-column: 1 / span 2;
+    border-color: rgb(31, 31, 146);
+}
+section{
+    display: grid;
+    background-color: white;
+    border-style: solid;
+    border-color: rgb(31, 31, 146);
+    grid-template-rows: auto auto auto;
+}
+article{
+    background-color: rgb(179, 107, 149);
+    margin: 1%;
+    width: 80%;
+    height: 80%;
+    font-size: 200%;
+    text-align: center;
+    position: relative;
+    color: black; 
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-color: rgb(44, 17, 215);
+    border-style: solid;
+}
+aside{
+    background-color: white; 
+    border-style: solid;
+    border-color: rgb(31, 31, 146);
+}
+footer{
+    background-color: white;
+    border-style: solid;
+    grid-column: 1 / span 2;
+    border-color: rgb(31, 31, 146);
+}
+h1{
+    width: 94%;
+    height: 75%;
+    font-size: 200%;
+    text-align: center;
+    position: relative;
+    color: black; 
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: rgb(228, 202, 222);
+    border-color: rgb(182, 92, 127);
+    border-style: solid;
+}
+h2{
+    width: 90%;
+    height: 370%;
+    font-size: 200%;
+    text-align: center;
+    position: relative;
+    color: black; 
+    top: 220%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: rgb(228, 202, 222);
+    border-color: rgb(185, 128, 150);
+    border-style: solid;
+}
+h3{
+    width: 90%;
+    height: 92%;
+    font-size: 200%;
+    text-align: center;
+    position: relative;
+    color: black; 
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: rgb(228, 202, 222);
+    border-color: rgb(185, 128, 150);
+    border-style: solid;
+}
+@media (min-width: 769px){
+    h3{
+        background-color: rgb(205, 76, 50);
+    }
+    h2{
+        background-color: rgb(205, 76, 50);
+        height: 400%;
+    }
+    h1{
+        background-color: rgb(205, 76, 50);
+    }
+    article{
+        background-color: rgb(217, 124, 106);
+    }
+}
+@media (min-width: 1080px){
+    .centro{
+        grid-template-rows: 20% 20% 100% 50% 20%;
+    }
+    h3{
+        background-color: rgb(101, 0, 145);
+    }
+    h2{
+        background-color: rgb(101, 0, 145);
+        top: 250%;
+        height: 450%
+    }
+    h1{
+        background-color: rgb(101, 0, 145);
+    }
+    article{
+        background-color: rgb(217, 156, 233);
+    }
+    section{
+        grid-column: 1 / span 2;
+    }
+    aside{
+        grid-column: 1 / span 2;
+    }
+}
